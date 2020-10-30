@@ -2,7 +2,8 @@
 public class EmployeeDetails {
 	
 	int employee_age;
-	String employe_ename;
+	String employee_name;
+	String employee_salary;
 	
 
 }

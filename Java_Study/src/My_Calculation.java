@@ -26,7 +26,11 @@ public int division (int x, int y) {
 	
 	return x/y;
 	
+}
+
+public int modulus (int x, int y) {
 	
+	return x%y;
 }
    public static void main(String args[]) {
       int a = 20, b = 10;

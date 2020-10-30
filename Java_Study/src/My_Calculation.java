@@ -22,6 +22,12 @@ public void multiplication(int x, int y) {
       System.out.println("The product of the given numbers:"+z);
    }
 	
+public int division (int x, int y) {
+	
+	return x/y;
+	
+	
+}
    public static void main(String args[]) {
       int a = 20, b = 10;
       My_Calculation demo = new My_Calculation();

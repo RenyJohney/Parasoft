@@ -28,6 +28,11 @@ public int division (int x, int y) {
 	
 }
 
+public int square (int x) {
+	
+	return x*x;
+}
+
 public int modulus (int x, int y) {
 	
 	return x%y;

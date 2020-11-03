@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Regression">
-                    <span>C:\Users\renyjohney1988\Selenium Eclipse Workspace\Testing Course\projectname\testng.xml</span>
+                    <span>C:\Users\renyjohney1988\git\repository\projectname\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="com.cmpnyname.projectname.LoginTest" hash-for-method="PositiveLoginTest(def, fff)">PositiveLoginTest(def, fff)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="com.cmpnyname.projectname.LoginTest" hash-for-method="PositiveLoginTest(reny, renylopez)">PositiveLoginTest(reny, renylopez)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="com.cmpnyname.projectname.LoginTest" hash-for-method="PositiveLoginTest(def, fff)">PositiveLoginTest(def, fff)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -131,56 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.cmpnyname.projectname.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PositiveLoginTest(def, fff)">
-                  </a> <!-- PositiveLoginTest(def, fff) -->
-                  <span class="method-name">PositiveLoginTest</span>
-                  <span class="parameters">(def, fff)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;loginPanel&quot;]/form/div[3]/input (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.cmpnyname.projectname.BasePageObject.waitForElement(BasePageObject.java:28)
-	at com.cmpnyname.projectname.BasePageObject.click(BasePageObject.java:43)
-	at com.cmpnyname.projectname.LoginPage.clickSignInBtn(LoginPage.java:31)
-	at com.cmpnyname.projectname.LoginTest.PositiveLoginTest(LoginTest.java:18)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=86.0.4240.75)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-H2GN6IE&apos;, ip: &apos;192.168.146.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\RENYJO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56356}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 57f0f69eca2ad7036b89c1c8fd3f44e9
-*** Element info: {Using=xpath, value=//*[@id=&quot;loginPanel&quot;]/form/div[3]/input}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 29 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Positive Test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -197,12 +138,22 @@ Session ID: 57f0f69eca2ad7036b89c1c8fd3f44e9
 (Positive Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PositiveLoginTest(def, fff)">
+                  </a> <!-- PositiveLoginTest(def, fff) -->
+                  <span class="method-name">PositiveLoginTest</span>
+                  <span class="parameters">(def, fff)</span>
+                  <em>
+(Positive Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression-class-passed -->
         </div> <!-- panel Regression -->
         <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\renyjohney1988\Selenium Eclipse Workspace\Testing Course\projectname\testng.xml</span>
+            <span class="header-content">C:\Users\renyjohney1988\git\repository\projectname\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,16 +207,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PositiveLoginTest')
 data.setCell(0, 2, 'com.cmpnyname.projectname.LoginTest')
-data.setCell(0, 3, 36384);
+data.setCell(0, 3, 11201);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'PositiveLoginTest')
 data.setCell(1, 2, 'com.cmpnyname.projectname.LoginTest')
-data.setCell(1, 3, 8175);
+data.setCell(1, 3, 6820);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -298,23 +249,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">loadPropertiesFile</span>
-                <span class="method-start">5128 ms</span>
+                <span class="method-start">7287 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">PositiveLoginTest(reny, renylopez)</span>
-                <span class="method-start">6221 ms</span>
+                <span class="method-start">8564 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">PositiveLoginTest(def, fff)</span>
-                <span class="method-start">14401 ms</span>
+                <span class="method-start">19769 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">50950 ms</span>
+                <span class="method-start">26769 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

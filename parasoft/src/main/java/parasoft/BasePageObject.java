@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePageObject {
 	
-	WebDriver driver;
-	WebDriverWait wait;
+	WebDriver driver =  null;
+	WebDriverWait wait = null;
 	
 	public BasePageObject(WebDriver driver) {
 		

@@ -19,11 +19,11 @@ public class BaseTest extends FeedTest{
 	Properties prop;
 
 
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	@BeforeSuite
-	public WebDriver initDriver(String browser) {
+	public WebDriver initDriver() {
 		
-		switch(browser){
+		/*switch(browser){
 		case "chrome"  :
 			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 			driver = new ChromeDriver();
@@ -32,8 +32,9 @@ public class BaseTest extends FeedTest{
 		case "default" : 
 			
 		break;	
-		}	
-		
+		}	*/
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		return driver;	
 	}
